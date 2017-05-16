@@ -33,7 +33,7 @@ of that word.
   ```
 
   **Notes**:
-  * You need only return anagrams that are single words. For example, if `word` is `hear`, `a her` is not an anagram.
+  * You must only return anagrams that are single words. For example, if `word` is `hear`, `a her` is not an anagram.
   * The anagrams returned must only come from the provided list of words.
   * The list of words in `anagrams` must not contain the requested word itself.
   * The list of words in `anagrams` must be sorted alphabetically.
@@ -48,5 +48,5 @@ of that word.
 
   { "message" : "Couldn't find word asdfasdf1234" }
   ```
-* Returns `404 Not Found` if the word is not specified (`GET /word`). The response
+* Returns `404 Not Found` if the word is not specified (`GET /word` or `GET /word/`). The response
   body here is irrelevant
