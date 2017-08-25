@@ -1,0 +1,9 @@
+---
+applications:
+- name: anagram
+  memory: 256M
+  instances: 1
+  path: target/exercise-mw-0.1.0.jar
+  buildpack: java_buildpack
+
+

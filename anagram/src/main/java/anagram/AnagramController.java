@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -13,12 +14,13 @@ import java.util.List;
 @RestController
 public class AnagramController  {
 
-    private DictionaryHelper helper = new DictionaryHelper();
+    @Autowired
+    private DictionaryHelper2 helper;
 
     @RequestMapping("/")
     public String index() {
 
-        return "Greetings!  Use the following syntax: ../word/myword";
+        return "Hey whaaaaa?";
     }
 
 
